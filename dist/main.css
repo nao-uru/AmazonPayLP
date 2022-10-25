@@ -1,23 +1,46 @@
 body {
   margin: 0 auto;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-color: #FAFFFE;
-  font-family: 'Noto Sans JP', sans-serif; }
+  font-family: 'Noto Sans JP', sans-serif;
+}
 
 .wrap {
   width: 95%;
   margin: 0 auto;
-  color: #3E3A39; }
+  color: #3E3A39;
+}
 
 .shadow {
   border-radius: 32px;
-  box-shadow: -3px -4px 12px rgba(242, 242, 242, 0.25), 3px 4px 15px rgba(189, 189, 189, 0.25); }
+  -webkit-box-shadow: -3px -4px 12px rgba(242, 242, 242, 0.25), 3px 4px 15px rgba(189, 189, 189, 0.25);
+          box-shadow: -3px -4px 12px rgba(242, 242, 242, 0.25), 3px 4px 15px rgba(189, 189, 189, 0.25);
+}
 
 .button {
-  border-radius: 40px; }
+  border-radius: 40px;
+}
+
+.fade {
+  opacity: 0;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  -webkit-transition: opacity 1.5s, -webkit-transform 1s;
+  transition: opacity 1.5s, -webkit-transform 1s;
+  transition: opacity 1.5s, transform 1s;
+  transition: opacity 1.5s, transform 1s, -webkit-transform 1s;
+}
+
+.fade.active {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
 
 @media screen and (min-width: 600px) {
   .wrap {
-    width: 70%; } }
-
+    width: 70%;
+  }
+}
 /*# sourceMappingURL=main.css.map */

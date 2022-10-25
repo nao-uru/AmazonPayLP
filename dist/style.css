@@ -591,20 +591,16 @@ video {
   margin-top: 1.25rem;
 }
 
-.mt-8 {
-  margin-top: 2rem;
-}
-
 .flex {
   display: flex;
 }
 
-.h-64 {
-  height: 16rem;
-}
-
 .h-12 {
   height: 3rem;
+}
+
+.h-64 {
+  height: 16rem;
 }
 
 .w-full {
@@ -617,24 +613,12 @@ video {
   width: fit-content;
 }
 
-.w-96 {
-  width: 24rem;
-}
-
 .w-12 {
   width: 3rem;
 }
 
-.flex-col {
-  flex-direction: column;
-}
-
-.flex-col-reverse {
-  flex-direction: column-reverse;
-}
-
-.justify-start {
-  justify-content: flex-start;
+.w-96 {
+  width: 24rem;
 }
 
 .justify-center {
@@ -647,6 +631,19 @@ video {
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-main_pink {
+  --tw-border-opacity: 1;
+  border-color: rgb(245 130 191 / var(--tw-border-opacity));
 }
 
 .bg-fff {
@@ -701,16 +698,8 @@ video {
   vertical-align: baseline;
 }
 
-.align-top {
-  vertical-align: top;
-}
-
 .align-middle {
   vertical-align: middle;
-}
-
-.align-bottom {
-  vertical-align: bottom;
 }
 
 .text-2xl {
@@ -770,6 +759,41 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.hover\:border:hover {
+  border-width: 1px;
+}
+
+.hover\:border-2:hover {
+  border-width: 2px;
+}
+
+.hover\:border-r:hover {
+  border-right-width: 1px;
+}
+
+.hover\:border-solid:hover {
+  border-style: solid;
+}
+
+.hover\:border-main_pink:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(245 130 191 / var(--tw-border-opacity));
+}
+
+.hover\:bg-fff:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:text-main_pink:hover {
+  --tw-text-opacity: 1;
+  color: rgb(245 130 191 / var(--tw-text-opacity));
+}
+
+.hover\:opacity-80:hover {
+  opacity: 0.8;
+}
+
 @media (min-width: 640px) {
   .sm\:flex {
     display: flex;
@@ -793,28 +817,20 @@ video {
     margin-top: 8rem;
   }
 
-  .md\:mt-10 {
-    margin-top: 2.5rem;
-  }
-
   .md\:mt-4 {
     margin-top: 1rem;
+  }
+
+  .md\:mt-10 {
+    margin-top: 2.5rem;
   }
 
   .md\:flex {
     display: flex;
   }
 
-  .md\:justify-start {
-    justify-content: flex-start;
-  }
-
   .md\:justify-center {
     justify-content: center;
-  }
-
-  .md\:justify-around {
-    justify-content: space-around;
   }
 
   .md\:px-10 {
