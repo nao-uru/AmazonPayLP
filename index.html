@@ -7,18 +7,125 @@
 
   <link rel="stylesheet" href="./dist/main.css">
   <link rel="stylesheet" href="./dist/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
   <title>さくらトラベル</title>
 </head>
 <body>
-  <div class="wrap">
-    <img src="/src/img/sample.png" alt="" class="w-full">
-    <div class="mt-8 flex">
-      <div>
-        <div class="font-semibold text-3xl">キャンペーン概要</div>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde tenetur voluptatum error non corrupti suscipit ducimus, pariatur totam nihil.!</p>
-      </div>
-      <div class="w-96 h-96 border"></div>
-    </div>
+  <div class="wrap text-main-text pb-40">
+    <header>
+      <img src="/src/img/top.png" alt="" class="w-full">
+    </header>
+
+    <!-- キャンペーン概要 -->
+    <main>
+
+      <section >
+        <div class="w-fit m-auto bg-fff shadow px-8 py-6 md:px-10 md:py-8 mt-10 md:mt-14">
+          <div class="sm:flex justify-center align-middle">
+            <div>
+              <div>
+                <h2 class="md:text-4xl text-2xl font-bold">Amazonキャンペーン概要</h2>
+              </div>
+              <div>
+                <p class="md:text-xl text-base font-medium md:leading-relaxed md:mt-6 mt-4">抽選で1,000名×1,000円<br>
+                  期間:2022年11月5日〜12月31日まで</p>
+                  <p class="md:text-xl text-base font-medium md:leading-relaxed md:mt-6 mt-4">Amazon Payでお支払いのお客様対象<br>
+                    抽選で1,000名様にAmazonギフトカード、<br>
+                  <span class="md:text-3xl text-xl font-black text-notion_orange leading-relaxed md:leading-loose">1,000円分をプレゼント！</span></p>
+              </div>
+            </div>
+            <div class="flex justify-center align-middle mt-6">
+              <img src="./src/img/party.svg" alt="">
+            </div>
+          </div>
+        </div>
+
+        <a href="https://www.sakuratravel.jp/" target="_blank">
+          <div class="button bg-main_pink font-bold md:text-3xl text-xl flex justify-center align-middle px-16 py-4 w-fit m-auto mt:mt-16 mt-10">
+            <p class="text-fff">航空券を検索する</p>
+          </div>
+        </a>
+      </section>
+  
+      <!-- 概要詳細 -->
+      <section>
+        <div class="md:mt-40 mt-20 m-auto px-2">
+          <div>
+            <h2 class="md:text-3xl text-2xl font-bold text-center">キャンペーン期間</h2>
+            <p class="md:text-xl text-lg font-medium leading-relaxed mt-6 text-center">2022年11月05日(土) 00:00～12月31日(土) 23:59ご決済分まで</p>
+          </div>
+          <div class="md:mt-32 mt-16">
+            <h2 class="md:text-3xl text-2xl font-bold text-center">応募方法</h2>
+            <p class="md:text-xl text-lg font-medium leading-relaxed mt-6 text-center">自動エントリーとなります。</p>
+          </div>
+          <div class="md:mt-32 mt-16">
+            <h2 class="md:text-3xl text-2xl font-bold text-center">対象条件</h2>
+            <p class="md:text-xl text-lg font-medium leading-relaxed mt-6 text-center">キャンペーン期間中に以下の条件を満たしたお客様が対象となります。</p>
+            <p class="md:text-base text-sm font-medium mt-2 md:text-center">※尚、さくらトラベル会員にログインされずに購入された方や、途中でキャンセルされた方はキャンペーン適応対象外となります。</p>
+          </div>
+        </div>
+        
+        <!-- 対象条件 -->
+        <div class="mt-6 md:flex justify-around align-baseline">
+          <div class="px-2">
+            <div class="mt-6 md:flex md:justify-center px-2">
+              <div class="w-12 h-12 mr-1 rounded-full bg-second_green flex justify-center align-middle"><p class="text-fff font-medium text-2xl">1</p></div>
+              <p class="text-lg font-bold">さくらトラベル会員に<span class="text-notion_orange">ログインをした状態</span>で<br>
+                キャンペーン対象商品をご購入されたお客様</p>
+            </div>
+            <div class="w-96 h-64 py-6  m-auto mt-2 bg-fff shadow flex justify-center align-middle">
+              <img class="" src="./src/img/login.svg" alt="">
+            </div>
+          </div>
+
+          <div class="px-2">
+            <div class="mt-6 md:flex md:justify-center px-2">
+              <div class="w-12 h-12 mr-1 rounded-full bg-second_green flex justify-center align-middle"><p class="text-fff font-medium text-2xl">2</p></div>
+              <p class="text-lg font-bold">お支払方法を<span class="text-notion_orange">Amazon Payで決済</span></p>
+            </div>
+            <div class="w-96 h-64 py-6 m-auto mt-2 md:mt-4 bg-fff shadow flex justify-center align-middle">
+              <img class="" src="./src/img/phone.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <a href="https://www.sakuratravel.jp/" target="_blank">
+          <div class="button bg-main_pink font-bold md:text-3xl text-xl flex justify-center align-middle px-16 py-4 w-fit m-auto mt:mt-16 mt-10">
+            <p class="text-fff">航空券を検索する</p>
+          </div>
+        </a>
+      </section>
+  
+      <!-- 注意事項 -->
+      <section>
+        <div class="md:mt-40 md:px-8 mt-20 px-2">
+          <div>
+            <h3 class="font-bold md:text-2xl text-xl">対象商品</h3>
+            <p class="md:text-base text-sm md:font-medium m:mt-2 mt-1 leading-relaxed">国内航空券</p>
+          </div>
+
+          <div class="md:mt-10 mt-5">
+            <h3 class="font-bold md:text-2xl text-xl">当選案内</h3>
+            <p class="md:text-base text-sm md:font-medium m:mt-2 mt-1 leading-relaxed">ご当選されたお客様には、2023年01月31日(火)までに登録されているメールアドレス宛に当選案内のメールと、Amazonギフトカードをお送りいたします。</p>
+          </div>
+
+          <div class="mt-10">
+            <h3 class="font-bold md:text-2xl text-xl">注意事項</h3>
+            <p class="md:text-base text-sm md:font-medium m:mt-2 mt-1 leading-relaxed">お一人様1回限り有効です。
+              抽選方法や当選結果についてのお問い合わせにはお答えできかねます。ご了承ください。<br>
+              本キャンペーンは予告なく終了する場合がございます。<br>
+              ご当選された賞品の交換、およびご当選権利の譲渡はできません。<br>
+              ご当選されたお客様へのAmazonギフトカードは web@sakuratravel.jpよりお送りします。メール受信拒否設定（ドメイン指定受信）を設定している場合は、web@sakuratravel.jpからのメールを受信できるよう設定してください。<br>
+              当社の責によらない事由により当選メッセージを受信又は確認できないことから発生した不利益については、当社では一切の責任を負いません。<br>
+              応募者が、本キャンペーンに応募するための費用（インターネット通信料・接続料等）は全て応募者のご負担になります。<br>
+              本キャンペーンは、株式会社さくらトラベルによる提供です。本キャンペーンのお問合せはAmazonでは受け付けておりません。<br>
+              ※Amazon、Amazon Payおよび関連するすべてのロゴは、 Amazon.com, Inc. またはその関連会社の商標です。</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
   </div>
 </body>
 </html>
